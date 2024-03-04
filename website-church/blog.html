@@ -24,7 +24,7 @@
                 <li class="sermones"><a href="index.html">Inicio</a></li>
                 <li class="sermones"><a href="calendario.html">Calendario</a></li>
                 <li class="sermones"><a href="blog.html">Blog</a></li>
-                <li class="sermones"><a href="live.html">Sintoniza en Vivo<img src="images/icons8-live-48.png"></a></li>
+                <li class="sermones"><a href="live.html">Sintoniza en Vivo<img src="images/icons8-live-48.png" alt="live-icon"></a></li>
             </ul>
         </nav>
             </header>
@@ -35,14 +35,14 @@
         </div>
            <div class="blog-articles">
                 <div class="blog-post">
-                    <h1>{{ post.data.title }}</h1> <!-- Display the full blog post title -->
-                <p>Posted on {{ post.date | date("MMMM DD, YYYY") }} by {{ post.data.author }}</p> <!-- Display date and author --> 
+                    <h1>post.data.title</h1> <!-- Display the full blog post title -->
+                <p>Posted on post.date date("MMMM DD, YYYY") by post.data.author </p> <!-- Display date and author --> 
                 <button id="blog-bttn"><a href="posts/post-1.html">leer mas</a></button>
                 </div>
 
                 <div class="blog-post">
                     <h1>{{ post.data.title }}</h1> <!-- Display the full blog post title -->
-                <p>Posted on {{ post.date | date("MMMM DD, YYYY") }} by {{ post.data.author }}</p> <!-- Display date and author --> 
+                <p>Posted on  post.date  date"MMMM DD, YYYY"  by  post.data.author </p> <!-- Display date and author --> 
                 <button id="blog-bttn"><a href="posts/post-2.html">leer mas</a></button>
                 </div>
            </div>

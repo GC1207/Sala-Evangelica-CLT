@@ -24,20 +24,20 @@
                 <li class="sermones"><a href="../index.html">Inicio</a></li>
                 <li class="sermones"><a href="../calendario.html">Calendario</a></li>
                 <li class="sermones"><a href="../blog.html">Blog</a></li>
-                <li class="sermones"><a href="../live.html">Sintoniza en Vivo<img src="../images/icons8-live-48.png"></a></li>
+                <li class="sermones"><a href="../live.html">Sintoniza en Vivo<img src="../images/icons8-live-48.png"    alt="live-icon"></a></li>
             </ul>
         </nav>
             </header>
     <main>
         <div class="return">
-        <a href="../blog.html"><img src="../images/back-arrow.png"><p>Regresa</p></a>
+        <a href="../blog.html"><img src="../images/back-arrow.png" alt="back arrow"><p>Regresa</p></a>
         </div>
         <div class="full-blog-post-content">
             <article class="full-blog-post">
-            <h1>{{ post.data.title }}</h1> <!-- Display the full blog post title -->
-            <p>Posted on {{ post.date | date("MMMM DD, YYYY") }} by {{ post.data.author }}</p> <!-- Display date and author -->
+            <h1> post.data.title </h1> <!-- Display the full blog post title -->
+            <p>Posted on  post.date  date("MMMM DD, YYYY")  by  post.data.author </p> <!-- Display date and author -->
             <div class="full-blog-content">
-                {{ post.content | safe }} <!-- Display the full content of the blog post -->
+                 post.content  safe  <!-- Display the full content of the blog post -->
             </div>
             </article>
         </div>

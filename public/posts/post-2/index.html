@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>Title</title>
+        <link rel="stylesheet" href="../styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img class="heroimg" src="../images/test1.jpg" alt="church picture">
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for ="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+            <nav>
+                <ul class="links">
+                <li class="sermones"><a href="../index.html">Inicio</a></li>
+                <li class="sermones"><a href="../calendario.html">Calendario</a></li>
+                <li class="sermones"><a href="../blog.html">Blog</a></li>
+                <li class="sermones"><a href="../live.html">Sintoniza en Vivo<img src="../images/icons8-live-48.png"    alt="live-icon"></a></li>
+            </ul>
+        </nav>
+            </header>
+    <main>
+        <div class="return">
+        <a href="../blog.html"><img src="../images/back-arrow.png" alt="back arrow"><p>Regresa</p></a>
+        </div>
+        <div class="full-blog-post-content">
+            <article class="full-blog-post">
+            <h1> post.data.title </h1> <!-- Display the full blog post title -->
+            <p>Posted on  post.date  date("MMMM DD, YYYY")  by  post.data.author </p> <!-- Display date and author -->
+            <div class="full-blog-content">
+                 post.content  safe  <!-- Display the full content of the blog post -->
+            </div>
+            </article>
+        </div>
+    </main>
+
+        <footer>     
+                <p> Copyright &copy; <script>document.write(new Date().getFullYear())</script> Sala Evangelica Charlotte NC</p>      
+        </footer>
+    </body>
+</html>
