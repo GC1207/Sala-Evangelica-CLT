@@ -515,7 +515,6 @@ footer{
 .blog-articles {
     display: flex;
     flex-direction: column;
-    padding-left: 10%;
     padding-top: 2%;
     padding-bottom: 2%;
     margin-bottom: 10px;
@@ -529,11 +528,12 @@ footer{
    background: #e8e8e8;
    box-shadow: 0 0 10px #e8e8e8;
    padding: 10px 20px 10px 20px;
-   width: 75%;
+   width: 95%;
 }
 
 .blog-post h1 {
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .blog-post p {
@@ -542,7 +542,7 @@ footer{
 
 #blog-bttn {
    width: 70px;
-    height: 25px;
+    height: 35px;
     background: transparent;
     border: transparent;
     text-decoration: none;
@@ -555,7 +555,7 @@ footer{
 
 #blog-bttn:hover {
     cursor: pointer;
-    background: #d8d7d7;
+    background: #cecece;
 }
 
 /* FULL BLOG POST STARTS HERE */
@@ -589,7 +589,7 @@ footer{
 }
 
 .full-blog-post {
-    width: 70%;
+    width: 85%;
     display: flex;
     flex-direction: column;
     align-items: center;
