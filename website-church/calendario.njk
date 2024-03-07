@@ -1,28 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-    <link rel="stylesheet" href="/styles.css">
-</head>
-<body>
-    <header>
-    <img class="heroimg" src="/images/test1.jpg/" alt="church picture">
-    <input type="checkbox" id="nav-toggle" class="nav-toggle">
-    <label for ="nav-toggle" class="nav-toggle-label">
-        <span></span>
-    </label>
-    <nav>
-        <ul class="links">
-        <li class="sermones"><a href="/">Inicio</a></li>
-        <li class="sermones"><a href="/calendario/">Calendario</a></li>
-        <li class="sermones"><a href="/blog/">Blog</a></li>
-        <li class="sermones"><a href="/live/">Sintoniza en Vivo<img src="/images/icons8-live-48.png/" alt="live-icon"></a></li>
-    </ul>
-</nav>
-    </header>
-    
+---
+title: Blog
+layout: 'base.njk'
+---
+
     <main>
         <div class="calender"><iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&showCalendars=1&src=Z2lsMjAwMGNoQGdtYWlsLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%2333B679" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe></div>
         
@@ -40,9 +20,3 @@
         </div>
         </main>
     
-
-    <footer>     
-    <p> Copyright &copy; <script>document.write(new Date().getFullYear())</script> Sala Evangelica Charlotte NC</p>      
-</footer>
-</body>
-</html>
