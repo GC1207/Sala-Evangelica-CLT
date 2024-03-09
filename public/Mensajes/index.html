@@ -1,80 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-        <title>Title</title>
-        <link rel="stylesheet" href="styles.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <img class="heroimg" src="images/test1.jpg" alt="church picture">
-            <input type="checkbox" id="nav-toggle" class="nav-toggle">
-            <label for ="nav-toggle" class="nav-toggle-label">
-                <span></span>
-            </label>
-            <nav>
-                <ul class="links">
-                <li class="sermones"><a href="index.html">Inicio</a></li>
-                <li class="sermones"><a href="calendario.html">Calendario</a></li>
-                <li class="sermones"><a href="blog.html">Blog</a></li>
-                <li class="sermones"><a href="live.html">Sintoniza en Vivo<img src="images/icons8-live-48.png"></a></li>
-            </ul>
-        </nav>
-            </header>
-    <main>
-        <div id="mensajes-top">
-            <h1>Mensajes grabados</h1>
-            <p>Excucha mensajes pasados grabados</p>
-        </div>
-        <div class="recordings">
-            <div class="individual-recording">
-                <h3>Recording</h3>
-                <audio controls>
-                    <source src="horse.ogg" type="audio/ogg">
-                    <source src="horse.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-            <div class="individual-recording">
-                <h3>Recording</h3>
-                <audio controls>
-                    <source src="horse.ogg" type="audio/ogg">
-                    <source src="horse.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-            </div><div class="individual-recording">
-                <h3>Recording</h3>
-                <audio controls>
-                    <source src="horse.ogg" type="audio/ogg">
-                    <source src="horse.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-            </div><div class="individual-recording">
-                <h3>Recording</h3>
-                <audio controls>
-                    <source src="horse.ogg" type="audio/ogg">
-                    <source src="horse.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-            </div><div class="individual-recording">
-                <h3>Recording</h3>
-                <audio controls>
-                    <source src="horse.ogg" type="audio/ogg">
-                    <source src="horse.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-        </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sample</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+    <img class="heroimg" src="/images/test1.jpg/" alt="church picture">
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for ="nav-toggle" class="nav-toggle-label">
+        <span></span>
+    </label>
+    <nav>
+        <ul class="links">
+        <li class="sermones"><a href="/">Inicio</a></li>
+        <li class="sermones"><a href="/calendario/">Calendario</a></li>
+        <li class="sermones"><a href="/blog/">Blog</a></li>
+        <li class="sermones"><a href="/live/">Sintoniza en Vivo<img src="/images/icons8-live-48.png/" alt="live-icon"></a></li>
+    </ul>
+</nav>
+    </header>
+        <main>
+      <div class="registration-title">
+        <h1>Registracion de Campista</h1>
+      </div> 
+        <div class="registration-form">
+                <h2>Campamento Juvenil 2024</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                </div>
+                <div class="form-group">
+                    <label for="iglesia">Iglesia:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Iglesia">
+                </div>
+                <div class="form-group">
+                    <label for="edad">Edad:</label>
+                    <input type="edad" class="form-control" id="edad" placeholder="Ingrese su edad">
+                </div>
+        </div> 
         </main>
-        <footer>     
-                <p> Copyright &copy; <script>document.write(new Date().getFullYear())</script> Sala Evangelica Charlotte NC</p>      
-        </footer>
-    </body>
+        
+    <footer>     
+    <p> Copyright &copy; <script>document.write(new Date().getFullYear())</script> Sala Evangelica Charlotte NC</p>      
+</footer>
+</body>
 </html>

@@ -612,6 +612,35 @@ footer{
 }
 
 
+/** END BLOG**/
+
+/** START FORM CSS**/
+
+.registration-title {
+    text-align: center;
+}
+
+.registration-form {
+    margin: auto;
+    background-color: #e1e1e1;
+    width: -moz-fit-content;
+    width: fit-content;
+    text-align: center;
+    padding: 5px 20px;
+    margin-top: 1.5%;
+    border-radius: 5px;
+}
+
+.registration-form h2 {
+    font-size: 1.75rem;
+    padding: 1.5%;
+}
+
+.form-group {
+    margin: 3.5%;
+}
+/** END FORM CSS**/
+
 /** MEDIA QUERIES**/
 
 
