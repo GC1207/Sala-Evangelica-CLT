@@ -1,5 +1,5 @@
 ---
-title: myhomepage
+title: Inicio
 layout: 'base.njk'
 --- 
 
@@ -35,11 +35,7 @@ layout: 'base.njk'
                     </div>
                 <div id="block2">
                     <h2>Próximos<br/>Eventos</h2>
-                        <ul>
-                            <li><a href="/Mensajes/">sample</a></li>
-                            <li><p>this is the text</p></li>
-                            <li><p>this is the text</p></li>
-                      </ul>
+                        {% include 'events.njk' %}
                 </div>
             <div class="contact">
                 <div class="contactanos">

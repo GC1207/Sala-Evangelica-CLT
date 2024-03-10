@@ -24,6 +24,10 @@ body {
     display: none;
 }
 
+.heroimg {
+    object-fit: cover;
+}
+
 header {
     background: rgba(249, 249, 249, 0.82);
     display: flex;
@@ -342,6 +346,16 @@ main h1 h2 {
     padding: 20px;
 }
 
+#block2 a {
+    color: white;
+    text-decoration: none;
+}
+
+#block2 a:hover {
+    color:rgb(0, 51, 180);
+    transition: ease-in-out 0.2s;
+}
+
 #block2 p {
     font-size: 2rem;
     margin-right: 15%;
@@ -538,7 +552,7 @@ footer{
    background: #e8e8e8;
    box-shadow: 0 0 10px #e8e8e8;
    padding: 10px 20px 10px 20px;
-   width: 85%;
+   width: 50vw;
    text-decoration: none;
 }
 
@@ -1013,7 +1027,7 @@ footer{
 
     @media screen and (max-width: 400px) {
         iframe {
-            width: 315px;
+            width: 340px;
             height: 375px;
         }
     }

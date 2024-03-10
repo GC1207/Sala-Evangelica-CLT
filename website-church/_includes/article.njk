@@ -1,0 +1,15 @@
+--- 
+layout: 'base.njk'
+---
+        <div class="return">
+        <a href="/blog/"><img src="/images/back-arrow.png/"><p>Regresa</p></a>
+        </div>
+        <div class="full-blog-post-content">
+            <article class="full-blog-post">
+            <h1>{{ title }}</h1> <!-- Display the full blog post title -->
+            <div class="full-blog-content">
+                {{ content | safe }} <!-- Display the full content of the blog post -->
+            </div>
+            </article>
+        </div>
+  

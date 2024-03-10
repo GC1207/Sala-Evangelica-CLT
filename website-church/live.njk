@@ -1,5 +1,5 @@
 ---
-title: Live Stream
+title: Sintoniza en vivo
 layout: 'base.njk'
 ---
 <div id="live-title">
@@ -15,6 +15,7 @@ layout: 'base.njk'
 <script type="text/javascript">
   new Twitch.Player("twitch-embed", {
     channel: "salaevangelicaclt",
+    parent: ["localhost"],
     width: "1000px",
     height: "500px",
   });
