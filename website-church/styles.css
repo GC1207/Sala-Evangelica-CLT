@@ -26,7 +26,10 @@ body {
 
 .heroimg {
     object-fit: cover;
+    max-height: 40vh; /* Adjust this value based on your desired maximum height */
+    object-position: 0% 35%;
 }
+
 
 header {
     background: rgba(249, 249, 249, 0.82);
@@ -144,14 +147,6 @@ main h1 h2 {
     font-family: "montserrat", sans-serif;
 }
 
-
-
-
-.heroimg{
-    width: 100%;
-    height: auto; /* This ensures the aspect ratio is maintained */
-    max-height: 40vh; /* Adjust this value based on your desired maximum height */
-}
 
 #hero-content{
     padding-bottom: 55px;
@@ -536,8 +531,6 @@ footer{
     line-height: 40px;
     align-items: center;
     list-style: none;
-    width: 75%;
-    margin: auto;
 }
 
 .articles__list li {
@@ -552,7 +545,7 @@ footer{
    background: #e8e8e8;
    box-shadow: 0 0 10px #e8e8e8;
    padding: 10px 20px 10px 20px;
-   width: 50vw;
+   width: 75vw;
    text-decoration: none;
 }
 
