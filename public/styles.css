@@ -38,7 +38,6 @@ header {
     flex-direction: column;
     z-index: 10;
     box-shadow: 2px -20px 2px 1px rgba(216, 216, 216, 0.82);
-    margin-bottom: 5%;
 }
 
 
@@ -420,42 +419,6 @@ footer{
 /** END INDEX.HTML**/
 
 
-/** START MENSAJES.HTML**/
-
-#mensajes-top {
-    text-align: center;
-    margin-top: 30px;
-    line-height: 3.5rem;
-}
-
-#mensajes-top p {
-    font-size: 1.5rem;
-}
-
-.recordings {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 150px;
-}
-
-.individual-recording {
-    margin: 40px 10px 40px 20px;
-    padding-right: 10px;
-    padding-left: 10px;
-    border: 3.75px solid rgba(0, 72, 255, 0.795);
-    border-radius: 10px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    box-shadow: 0 0 5px 2px #e8e8e8;
-}
-
-.individual-recording h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    text-align: center;
-}
-/** END MENSAJES.HTML**
-
 
 /** START CALENDER.HTML**/
 
@@ -686,7 +649,122 @@ footer{
     color: white;
     transition: ease-in-out 0.2s;
 }
-/** END LIVESTREAM**
+/** END LIVESTREAM**/
+
+/** START REGISTRATION**/
+
+.camp-name {
+    display: none;
+}
+
+.camp-name h1 {
+    font-size: 3rem;
+    padding: 1.5%;
+}
+
+.camp-name h2 {
+    font-size: 2rem;
+    padding: 1.5% 1.5% 1.5% 2%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1.5%;
+}
+
+.info h2 {
+    font-size: 1.75rem;
+    padding: .75%;
+}
+.info ul li {
+    list-style: none;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+}
+
+.info ul {
+    padding: 1.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: bold;
+}
+
+.info ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.info ul a:hover {
+    text-decoration: underline;
+}
+
+.bottom-box {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e1e1e1;
+}
+
+.rules {
+    padding: 1.5%;
+}
+
+.rules h2 {
+    font-size: 1.75rem;
+    padding: 1.5%;
+}
+
+.rules ul {
+    text-align: left;
+}
+.rules ul li {
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    margin-left: 1%;
+}
+
+.ems h2 {
+    font-size: 1.75rem;
+    padding: 1.5%;
+}
+
+.ems {
+    padding: 1.5%;
+}
+
+.ems ul {
+    text-align: left;
+}
+
+.ems ul li {
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    margin-left: 1%;
+}
+
+.btn-info {
+    background-color: #cecece;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.15rem;
+    border: none;
+    width: fit-content;
+    margin: 2%;
+    align-self: center;
+}
+
+.btn-info:hover {
+    cursor: pointer;
+    background: rgba(0, 72, 255, 0.795);
+    color: white;
+    transition: ease-in-out 0.2s;
+}
+
+/** END REGISTRATION**
 
 /** START FORM CSS**/
 
