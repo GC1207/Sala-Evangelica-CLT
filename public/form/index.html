@@ -25,181 +25,418 @@
     <main>
           
 <!--  START GREETING/INFO  -->
-    <div class="camp-name">
-        <h1>Sala Evangelica de Charlotte, NC</h1>
-        <h2>Campamento Juvenil 2024</h2>
-     
-    <div class="info-rules">
-            <div class="info">
-                <h2>Informacion</h2>
-                <ul>
-                <li>Fecha: Abril 25-28, 2024</li>
-                <li><address><a href="https://maps.app.goo.gl/WEpNByMHTriBDiQS6">Ubicacion: 1460 Mackay Lane, Pinnacle, NC 28209 </a></address></li>
-                <li><p>Costo: $50 por Campista</p></li>
-                <li><p>Pagos por efectivo o en linea (cargos extra)</p></li>
-                <li><p>Contacto: Josue Maldonado</p></li>
-                <li><address><a href="tel:+1-980-327-7619">(980) 327-7619</a></address></li>
+<section class="camp-name">
+    <h1>Sala Evangelica de Charlotte, NC</h1>
+    <h2>Campamento Juvenil 2024</h2>
 
+    <div class="info-rules">
+        <div class="info">
+            <h2>Informacion</h2>
+            <ul>
+                <li>Fecha: Abril 25-28, 2024</li>
+                <li><address><a href="https://maps.app.goo.gl/WEpNByMHTriBDiQS6">Ubicacion: 1460 Mackay Lane, Pinnacle, NC 28209</a></address></li>
+                <li>Costo: $50 por Campista</li>
+                <li>Pagos por efectivo o en linea (cargos extra)</li>
+                <li>Contacto: Josue Maldonado</li>
+                <li><address><a href="tel:+1-980-327-7619">(980) 327-7619</a></address></li>
+            </ul>
+        </div>
+
+        <div class="bottom-box">
+            <div class="rules">
+                <h2>Codigo de conducta</h2>
+                <ul>
+                    <li>El campista debe comportarse con principios morales y cristianos todo el tiempo, siguiendo las reglas del campamento.</li>
+                    <li>El campista deberá usar un lenguaje apropiado. No se permite el uso de malas palabras comentarios inapropiados.</li>
+                    <li>El campista deberá entregar sus celulares a los encargados de su cabaña. Estos se devolverán al final del campamento.</li>
+                    <li>El campista deberá vestirse con ropa decorosa en todos los eventos (No se permitirá licras, camisas o shorts muy cortos).</li>
+                    <li>Si el campista no se somete al reglamento del campamento y muestra un comportamiento inapropiado, se le llamará la atención y se enviará un reporte a los ancianos de su asamblea local.</li>
                 </ul>
             </div>
-    
-            <div class="bottom-box">
-                <div class="rules">
-                    <h2>Codigo de conducta</h2>
-                    <ul>
-                        <li>El campista debe comportarse con principios morales y cristianos todo el tiempo, siguiendo las reglas del campamento.</li>
-                        <li>El campista deberá usar un lenguaje apropiado. No se permite el uso de malas palabras comentarios inapropiados.
-                        </li>
-                        <li>El campista deberá entregar sus celulares a los encargados de su cabaña. Estos se devolverán al final del campamento.
-                        </li>
-                        <li>El campista deberá vestirse con ropa decorosa en todos los eventos (No se permitirá licras, camisas o shorts muy cortos).
-                        </li>
-                        <li>Si el campista no se somete al reglamento del campamento y muestra un comportamiento inapropiado, se le llamará la atención y se enviará un reporte a los ancianos de su asamblea local. </li>
-                    </ul>
-                </div>
-                <div class="ems">
-                    <h2>En caso de emergencia</h2>
-                    <ul>
-                        <li>El campista o responsable da permiso para que la enfermera del campamento suministre algun medicamento que lleve o necesite.
-                        </li>
-                        <li>El campista o responsable autoriza para ser llevado a un hospital si es necesario.
-                        </li>
-                        <li>El campista es el responsable principal de sus acciones y consecuencias.</li>
-                    </ul>
-                   </div>
+            <div class="ems">
+                <h2>En caso de emergencia</h2>
+                <ul>
+                    <li>El campista o responsable da permiso para que la enfermera del campamento suministre algun medicamento que lleve o necesite.</li>
+                    <li>El campista o responsable autoriza para ser llevado a un hospital si es necesario.</li>
+                    <li>El campista es el responsable principal de sus acciones y consecuencias.</li>
+                </ul>
             </div>
         </div>
-        <button type="button" class="btn btn-info" id="registrateBtn">Registrate</button>
-
     </div>
+    <button type="button" class="btn btn-info" id="registrate-btn">Registrate</button>
+</section>
 <!--  END GREETING/INFO -->
 
- <!-- START FORM  -->
-    <div class="registration-title">
-        <h1>Registracion de Campista</h1>
-      </div> 
-        <div class="registration-form">
-                <h2>Campamento Juvenil 2024</h2>
-            <form id="regform">
-                <div class="tab" style="display: none">
-                    <h1>Informacion Del Campista</h1>
-                    <label for="iglesia-local">Iglesia Local a la que asiste el campista. Ejemplo, Sala Evangélica, Charlotte, NC.:</label>
-                    <input type="text" class="form-control" id="iglesia-local" placeholder="Ingrese su Iglesia">
-                    <label for="nombre">Nombre y Apellido del Campista:</label>
-                    <input type="name" class="form-control" id="nombre" placeholder="Ingrese su Combre y Apellido">
-                    <label for="edad-menor">Si es menor, nombre el responsable (Al escribir mi nombre autorizo para que mi hijo participe de todas las actividades del campamento).<br>Si es mayor de edad, escriba NA.:</label>
-                    <input type="text" class="form-control" id="edad-menor" placeholder="Nombre de responsable">
-                    <label for="edad-menor">Edad del campista:</label>
-                    <input type="text" class="form-control" id="edad" placeholder="Ingrese su edad">
-                    <p>Genero de el campista</p>
-                    <label for="genero-m"><input type="radio" class="form-control" id="genero-m" value="Masculino" name="genero">Masculino</label>
-                    <label for="genero-f"><input type="radio" class="form-control" id="genero-f" value="Femenino" name="genero">Femenino</label>
-                    <label for="telefono">Celular del campista:</label>
-                    <input type="text" class="form-control" id="telefono" placeholder="Ingrese su Celular">
-                    <p>Estado Civil del campista</p>
-                    <label for="estado-civil-s"><input type="radio" class="form-control" id="estado-civil-s" value="soltero" name="estado-civil">Soltero</label>
-                    <label for="estado-civil-c"><input type="radio" class="form-control" id="estado-civil-c" value="casado" name="estado-civil">Casado</label>
-                    <label for="estado-civil-o"><input type="radio" class="form-control" id="estado-civil-o" value="otro" name="estado-civil">Madre o Padre soltero</label>
-                    <p>Es el campista creyente?</p>
-                    <label for="creyente-s"><input type="radio" class="form-control" id="creyente-s" value="si" name="creyente-s">Si</label>
-                    <label for="creyente-n"><input type="radio" class="form-control" id="creyente-n" value="no" name="creyente-n">No</label>
-                    <p>Esta el campista Bautizado?</p>
-                    <label for="bautizado-s"><input type="radio" class="form-control" id="bautizado-s" value="si" name="bautizado-s">Si</label>
-                    <label for="bautizado-n"><input type="radio" class="form-control" id="bautizado-n" value="no" name="bautizado-n">No</label>
-                    <p>Esta el campista tomando alguna medicina al momento?</p>
-                    <label for="medicina-s"><input type="radio" class="form-control" id="medicina-s" value="si" name="medicina-s">Si</label>
-                    <label for="medicina-n"><input type="radio" class="form-control" id="medicina-n" value="no" name="medicina-n">No</label>
-                    <p>¿Qué tan bueno es el campista para hacer deportes?</p>
-                    <label for="excelente"><input type="radio" class="form-control" id="excelente" value="excelente" name="excelente">Excelente</label>
-                    <label for="muy-bueno"><input type="radio" class="form-control" id="muy-bueno" value="muy-bueno" name="muy-bueno">Muy bueno</label>
-                    <label for="bueno"><input type="radio" class="form-control" id="bueno" value="bueno" name="bueno">Bueno</label>
-                    <label for="regular"><input type="radio" class="form-control" id="regular" value="regular" name="regular">Regular</label>
-                    <label for="limitado"><input type="radio" class="form-control" id="limitado" value="limitado" name="limitado">Limitado</label>
-                    <label for="nombre">Si tiene alergias, especifique cuáles son. De lo contrario escriba no.:</label>
-                    <input type="text" class="form-control" id="alergia" placeholder="Ingrese su respuesta">
-              </div>
-
-                <!-- SECOND TAB -->
-                <div class="tab" style="display: none;">
-                    <h1>Manejo Biblico</h1>
-                    <p>Qué tan hábil es para buscar libros de la Biblia, encontrar versículos, o dar versículos de memoria?</p>
-                    <label for="principiante"><input type="radio" class="form-control" id="principiante" value="principiante" name="principiante">Principiante</label>
-                    <label for="intermedio"><input type="radio" class="form-control" id="intermedio" value="intermedio" name="intermedio">Intermedio</label>
-                    <label for="avanzado"><input type="radio" class="form-control" id="avanzado" value="avanzado" name="avanzado">Avanzado</label>
-                    <p>Libros de la Biblia: ¿Conoce los 66 libros de la Biblia y sabe decirlos en orden?</p>
-                    <label for="libros-s"><input type="radio" class="form-control" id="libros-s" value="si" name="libros-s">Si</label>
-                    <label for="libros-n"><input type="radio" class="form-control" id="libros-n" value="no" name="libros-n">No</label>
-                    <p>Conocimiento bíblico: ¿Como es el conocimiento que tiene de los personajes, lugares, etc. de la Biblia?</p>
-                    <label for="biblia-excelente"><input type="radio" class="form-control" id="biblia-excelente" value="biblia-excelente" name="excelente">Excelente</label>
-                    <label for="biblia-muy-bueno"><input type="radio" class="form-control" id="biblia-muy-bueno" value="biblia-muy-bueno" name="muy-bueno">Muy bueno</label>
-                    <label for="biblia-bueno"><input type="radio" class="form-control" id="biblia-bueno" value="bueno" name="biblia-bueno">Bueno</label>
-                    <label for="biblia-regular"><input type="radio" class="form-control" id="biblia-regular" value="regular" name="biblia-regular">Regular</label>
-                    <label for="biblia-limitado"><input type="radio" class="form-control" id="biblia-limitado" value="limitado" name="biblia-limitado">Limitado</label>
+<!-- START FORM  -->
+<section class="registration-form" style="display: none;">
+    <h2>Campamento Juvenil 2024</h2>
+    <form id="regform">
+        <div class="registration-tab">
+            <h3>Informacion Del Campista</h3>
+            <div class="form-group">
+                <label for="iglesia-local">Iglesia Local a la que asiste el campista. Ejemplo, Sala Evangélica, Charlotte, NC.:</label>
+                <input type="text" class="form-control" id="iglesia-local" placeholder="Ingrese su Iglesia" required>
+            </div>
+            <div class="form-group">
+                <label for="nombre">Nombre y Apellido del Campista:</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ingrese su Nombre y Apellido" required>
+            </div>
+            <div class="form-group">
+                <label for="edad-menor">Si es menor, nombre el responsable (Al escribir mi nombre autorizo para que mi hijo participe de todas las actividades del campamento).<br>Si es mayor de edad, escriba NA.:</label>
+                <input type="text" class="form-control" id="edad-menor" placeholder="Nombre de responsable">
+            </div>
+            <div class="form-group">
+                <label for="edad">Edad del campista:</label>
+                <input type="number" class="form-control" id="edad" placeholder="Ingrese su edad" required>
+            </div>
+            <fieldset>
+                <legend>Genero de el campista</legend>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="genero-m" value="Masculino" name="genero" required>
+                    <label class="form-check-label" for="genero-m">Masculino</label>
                 </div>
-
-                <!-- THIRD TAB -->
-                <div class="tab" style="display: none;">
-                    <p>Entiendo que al llenar esta forma manifiesto que he leído, entiendo y me someto a las reglas del campamento y que la información suministrada es verdadera. </p>
-                    <label for="final-s"><input type="radio" class="form-control" id="final-s" value="si" name="final-s">Si</label>
-                    <label for="final-n"><input type="radio" class="form-control" id="final-n" value="no" name="final-n">No</label>
-                    <p>Como deseas pagar?</p>
-                    <label for="cash"><input type="radio" class="form-control" id="cash" value="cash" name="cash">Cash(En Persona)</label>
-                    <label for="enlinea"><input type="radio" class="form-control" id="enlinea" value="enlinea" name="enlinea">En linea (Cargos extra se aplican)</label>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="genero-f" value="Femenino" name="genero" required>
+                    <label class="form-check-label" for="genero-f">Femenino</label>
                 </div>
-                </form>
-                <button type="button" class="btn prevBtn" id="prevBtn">Regresar</button>
-                    <button type="button" class="nextBtn" id="nextBtn">Siguiente</button>
+            </fieldset>
+            <div class="form-group">
+                <label for="telefono">Celular del campista:</label>
+                <input type="tel" class="form-control" id="telefono" placeholder="Ingrese su Celular" required>
+            </div>
+            <fieldset>
+                <legend>Estado Civil del campista</legend>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="estado-civil-s" value="soltero" name="estado-civil" required>
+                    <label class="form-check-label" for="estado-civil-s">Soltero</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="estado-civil-c" value="casado" name="estado-civil" required>
+                    <label class="form-check-label" for="estado-civil-c">Casado</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="estado-civil-o" value="otro" name="estado-civil" required>
+                    <label class="form-check-label" for="estado-civil-o">Madre o Padre soltero</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Es el campista creyente?</legend>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="creyente-s" value="si" name="creyente" required>
+                    <label class="form-check-label" for="creyente-s">Si</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="creyente-n" value="no" name="creyente" required>
+                    <label class="form-check-label" for="creyente-n">No</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Esta el campista Bautizado?</legend>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="bautizado-s" value="si" name="bautizado" required>
+                    <label class="form-check-label" for="bautizado-s">Si</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="bautizado-n" value="no" name="bautizado" required>
+                    <label class="form-check-label" for="bautizado-n">No</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Esta el campista tomando alguna medicina al momento?</legend>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="medicina-s" value="si" name="medicina" required>
+                    <label class="form-check-label" for="medicina-s">Si</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="medicina-n" value="no" name="medicina" required>
+                    <label class="form-check-label" for="medicina-n">No</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>¿Qué tan bueno es el campista para hacer deportes?</legend>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="excelente" value="excelente" name="deportes" required>
+                    <label class="form-check-label" for="excelente">Excelente</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="muy-bueno" value="muy-bueno" name="deportes" required>
+                    <label class="form-check-label" for="muy-bueno">Muy bueno</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="bueno" value="bueno" name="deportes" required>
+                    <label class="form-check-label" for="bueno">Bueno</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="regular" value="regular" name="deportes" required>
+                    <label class="form-check-label" for="regular">Regular</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="limitado" value="limitado" name="deportes" required>
+                    <label class="form-check-label" for="limitado">Limitado</label>
+                </div>
+            </fieldset>
+            <div class="form-group">
+                <label for="alergia">Si tiene alergias, especifique cuáles son. De lo contrario escriba no.:</label>
+                <input type="text" class="form-control" id="alergia" placeholder="Ingrese su respuesta" required>
+            </div>
         </div>
-                   
-                   
-<!-- Your HTML code -->
+
+        <!-- SECOND TAB -->
+        <div class="registration-tab" style="display: none;">
+            <h3>Manejo Biblico</h3>
+            <fieldset>
+                <legend>Qué tan hábil es para buscar libros de la Biblia, encontrar versículos, o dar versículos de memoria?</legend>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="principiante" value="principiante" name="biblia" required>
+                    <label class="form-check-label" for="principiante">Principiante</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="intermedio" value="intermedio" name="biblia" required>
+                    <label class="form-check-label" for="intermedio">Intermedio</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="avanzado" value="avanzado" name="biblia" required>
+                    <label class="form-check-label" for="avanzado">Avanzado</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Libros de la Biblia: ¿Conoce los 66 libros de la Biblia y sabe decirlos en orden?</legend>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="libros-s" value="si" name="libros" required>
+                    <label class="form-check-label" for="libros-s">Si</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="libros-n" value="no" name="libros" required>
+                    <label class="form-check-label" for="libros-n">No</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Conocimiento bíblico: ¿Como es el conocimiento que tiene de los personajes, lugares, etc. de la Biblia?</legend>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="biblia-excelente" value="biblia-excelente" name="conocimiento" required>
+                    <label class="form-check-label" for="biblia-excelente">Excelente</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="biblia-muy-bueno" value="biblia-muy-bueno" name="conocimiento" required>
+                    <label class="form-check-label" for="biblia-muy-bueno">Muy bueno</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="biblia-bueno" value="bueno" name="conocimiento" required>
+                    <label class="form-check-label" for="biblia-bueno">Bueno</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="biblia-regular" value="regular" name="conocimiento" required>
+                    <label class="form-check-label" for="biblia-regular">Regular</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="biblia-limitado" value="limitado" name="conocimiento" required>
+                    <label class="form-check-label" for="biblia-limitado">Limitado</label>
+                </div>
+            </fieldset>
+        </div>
+
+        <!-- THIRD TAB -->
+        <div class="registration-tab" style="display: none;">
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="final-s" required>
+                <label class="form-check-label" for="final-s">Entiendo que al llenar esta forma manifiesto que he leído, entiendo y me someto a las reglas del campamento y que la información suministrada es verdadera.</label>
+            </div>
+            <fieldset>
+                <legend>Como deseas pagar?</legend>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="cash" value="cash" name="pago" required>
+                    <label class="form-check-label" for="cash">Cash(En Persona)</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="enlinea" value="enlinea" name="pago" required>
+                    <label class="form-check-label" for="enlinea">En linea (Cargos extra se aplican)</label>
+                </div>
+            </fieldset>
+        </div>
+
+        <!-- ONLINE PAYMENT tab -->
+        <div class="registration-tab" style="display: none;" data-no-next-button>
+            <h3>Selecciona tu metodo de pago</h3>
+            <div class="payment-options">
+                <button type="button" class="btn btn-info payment-option" data-payment="tarjeta">Tarjeta</button>
+                <button type="button" class="btn btn-info payment-option" data-payment="paypal">Paypal</button>
+                <button type="button" class="btn btn-info payment-option" data-payment="zelle">Zelle</button>
+            </div>
+        </div>
+        
+        <!-- TARJETA/STRIPE tab -->
+        <div class="registration-tab" style="display: none;">
+            <h3>Paga con tarjeta</h3>
+            <!-- Add your Stripe payment form here -->
+            <button type="button" class="btn btn-primary" id="stripe-next-btn">Siguiente</button>
+        </div>
+        
+        <!-- PAYPAL tab -->
+        <div class="registration-tab" style="display: none;">
+            <h3>Paga con Paypal</h3>
+            <!-- Add your PayPal payment instructions here -->
+            <button type="button" class="btn btn-primary" id="paypal-next-btn">Siguiente</button>
+        </div>
+        
+        <!-- ZELLE tab -->
+        <div class="registration-tab" style="display: none;">
+            <h3>Paga con Zelle</h3>
+            <!-- Add your Zelle payment instructions here -->
+            <button type="button" class="btn btn-primary" id="zelle-next-btn">Siguiente</button>
+        </div>
+        
+        <div class="registration-tab" style="display: none;">
+            <button type="submit" class="btn btn-info" id="submit-btn">Submit</button>
+        </div>
+        
+        <div class="registration-tab" style="display: none;">
+            <p>Gracias por registrarte para el Campamento de Jovenes 2024!</p>
+            <p>Haz click en el botton para regresar a la página principal.</p>
+            <button type="button" class="btn btn-info" id="success-btn">Ir a la página principal</button>
+        </div>
+        </form>
+        <div class="navigation-buttons">
+            <button type="button" class="btn btn-secondary" id="prev-btn">Regresar</button>
+            <button type="button" class="btn btn-primary" id="next-btn">Siguiente</button>
+        </div>
+        </section>
+        <!-- END FORM -->
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-      const registrateBtn = document.getElementById('registrateBtn');
-      const tabs = document.querySelectorAll('.tab');
-      let currentTab = 0;
+function showTab(n) {
+    const tabs = document.querySelectorAll('.registration-tab');
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
 
-      registrateBtn.addEventListener('click', () => {
-          // Hide the greeting page
-          document.querySelector('.camp-name').style.display = "none";
+    tabs.forEach((tab, index) => {
+        if (index === n) {
+            tab.style.display = "block";
+        } else {
+            tab.style.display = "none";
+        }
+    });
 
-          // Show the registration form
-          document.querySelector('.registration-title').style.display = "block";
-          document.querySelector('.registration-form').style.display = "block";
-          
+    // Hide both buttons on the submit and final tabs
+    if (n === tabs.length - 2 || n === tabs.length - 1) {
+        prevBtn.style.display = "none";
+        nextBtn.style.display = "none";
+    } else if (n === 0) {
+        prevBtn.style.display = "none";
+        nextBtn.style.display = "inline-block";
+    } else {
+        prevBtn.style.display = "inline-block";
+        
+        // Check if the current tab has the data-no-next-button attribute
+        const currentTab = tabs[n];
+        if (currentTab.hasAttribute('data-no-next-button')) {
+            nextBtn.style.display = "none";
+        } else {
+            nextBtn.style.display = "inline-block";
+        }
+    }
 
-          // Show the first tab
-          showTab(currentTab);
-      });
+}
 
-      document.getElementById('prevBtn').addEventListener('click', () => {
-          if (currentTab > 0) {
-              currentTab--;
-              showTab(currentTab);
-          }
-      });
+function showPaymentTab(paymentMethod) {
+    const tabs = document.querySelectorAll('.registration-tab');
+    let tabIndex;
 
-      document.getElementById('nextBtn').addEventListener('click', () => {
-          if (currentTab < tabs.length - 1) {
-              currentTab++;
-              showTab(currentTab);
-          }
-      });
+    switch (paymentMethod) {
+        case 'tarjeta':
+            tabIndex = 4;
+            break;
+        case 'paypal':
+            tabIndex = 5;
+            break;
+        case 'zelle':
+            tabIndex = 6;
+            break;
+        default:
+            tabIndex = 3;
+    }
 
-      function showTab(n) {
-        tabs.forEach((tab, index) => {
-            if (index === n) {
-                tab.style.display = "flex";
-                tab.style.flexDirection = "column";
-            } else {
-                tab.style.display = "none";
-              }
-          });
-      }
-  });
+    showTab(tabIndex);
+
+    // Hide the next button on the payment options tab
+    const nextBtn = document.getElementById('next-btn');
+    nextBtn.style.display = "none";
+
+    // Hide the previous button on the selected payment method tab
+    const prevBtn = document.getElementById('prev-btn');
+    prevBtn.style.display = "none";
+}
+
+// Event listeners for payment method next buttons
+const stripeNextBtn = document.getElementById('stripe-next-btn');
+const paypalNextBtn = document.getElementById('paypal-next-btn');
+const zelleNextBtn = document.getElementById('zelle-next-btn');
+
+stripeNextBtn.addEventListener('click', () => {
+    // Handle Stripe payment completion
+    // Example: completeStripePayment();
+    const tabs = document.querySelectorAll('.registration-tab');
+    showTab(tabs.length - 2); // Show the submit tab
+});
+
+paypalNextBtn.addEventListener('click', () => {
+    const tabs = document.querySelectorAll('.registration-tab');
+    showTab(tabs.length - 2); // Show the submit tab
+});
+
+zelleNextBtn.addEventListener('click', () => {
+    const tabs = document.querySelectorAll('.registration-tab');
+    showTab(tabs.length - 2); // Show the submit tab
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const submitBtn = document.getElementById('submit-btn');
+    const successBtn = document.getElementById('success-btn');
+    const registrateBtn = document.getElementById('registrate-btn');
+    const tabs = document.querySelectorAll('.registration-tab');
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+    const paymentOptions = document.querySelectorAll('.payment-option');
+    let currentTab = 0;
+
+    registrateBtn.addEventListener('click', () => {
+        document.querySelector('.camp-name').style.display = "none";
+        document.querySelector('.registration-form').style.display = "block";
+        showTab(currentTab);
+    });
+
+    submitBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        // Handle form submission
+        // Example: handleFormSubmission();
+        showTab(tabs.length - 1);
+    });
+
+    successBtn.addEventListener('click', () => {
+        window.location.href = '/form/';
+    });
+
+    prevBtn.addEventListener('click', () => {
+        if (currentTab > 0) {
+            currentTab--;
+            showTab(currentTab);
+        }
+    });
+
+    nextBtn.addEventListener('click', () => {
+        if (currentTab < tabs.length - 1) {
+            currentTab++;
+            showTab(currentTab);
+        }
+    });
+
+    paymentOptions.forEach(option => {
+        option.addEventListener('click', () => {
+            const paymentMethod = option.dataset.payment;
+            showPaymentTab(paymentMethod);
+        });
+    });
+});
 </script>
-<!-- END FORM   -->
     </main>
     <footer>     
     <p> Copyright &copy; <script>document.write(new Date().getFullYear())</script> Sala Evangelica Charlotte NC</p>      
