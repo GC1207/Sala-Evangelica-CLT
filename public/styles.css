@@ -803,8 +803,97 @@ footer{
     flex-direction: column;
 }
 
+.registration-tab {
+    width: 100%;
+}
+
 .form-control {
     margin-right: auto;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.form-group {
+    padding: 10px;
+}
+
+fieldset {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+
+.payment-options {
+    width: 100%;
+    margin-left: 50px;
+}
+
+#success-tab p{
+    margin: 15px;
+}
+
+.btn-primary {
+    background-color: #cecece;
+    text-decoration: none;
+    color: black;
+    padding: 7px;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    width: fit-content;
+    margin: 2%;
+    align-self: center;
+}
+
+.btn-primary:hover {
+    cursor: pointer;
+    background: rgba(0, 72, 255, 0.795);
+    color: white;
+    transition: ease-in-out 0.2s;
+}
+
+.btn-secondary {
+    background-color: #cecece;
+    text-decoration: none;
+    color: black;
+    padding: 7px;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    width: fit-content;
+    margin: 2%;
+    align-self: center;
+}
+
+.btn-secondary:hover {
+    cursor: pointer;
+    background: rgba(0, 72, 255, 0.795);
+    color: white;
+    transition: ease-in-out 0.2s;
+}
+
+#submit-tab p{
+    margin: 15px;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.btn-submit {     
+    padding: 7px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    background: rgba(0, 72, 255, 0.795);    
+    border: inherit;
+    border-radius: 7px;
+    color: white;
+    width: 100%;
+}
+
+.btn-submit:hover {
+    cursor: pointer;
+    box-shadow: #7c7a7a 0px 0px 0px 2px;
 }
 
 /** END FORM CSS**/
@@ -1116,5 +1205,10 @@ footer{
         iframe {
             width: 340px;
             height: 375px;
+        }
+
+        .payment-options {
+            width: 100%;
+            margin: revert;
         }
     }

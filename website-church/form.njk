@@ -217,13 +217,13 @@ layout: 'base.njk'
         <!-- THIRD TAB -->
         <div class="registration-tab" style="display: none;">
             <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="final-s" required>
+                <input type="checkbox" class="form-check-input" id="entiendo" name="entiendo" required>
                 <label class="form-check-label" for="final-s">Entiendo que al llenar esta forma manifiesto que he leído, entiendo y me someto a las reglas del campamento y que la información suministrada es verdadera.</label>
             </div>
             <fieldset>
                 <legend>Como deseas pagar?</legend>
                 <div class="form-check">
-                    <input type="radio" class="form-check-input" id="cash" value="cash" name="pago" required>
+                    <input type="radio" class="form-check-input" id="cash" value="cash" name="pago" data-payment="cash" required>
                     <label class="form-check-label" for="cash">Cash(En Persona)</label>
                 </div>
                 <div class="form-check">
@@ -264,11 +264,13 @@ layout: 'base.njk'
             <button type="button" class="btn btn-primary" id="zelle-next-btn">Siguiente</button>
         </div>
         
-        <div class="registration-tab" style="display: none;">
-            <button type="submit" class="btn btn-info" id="submit-btn">Submit</button>
+        <div class="registration-tab" id="submit-tab" style="display: none;">
+            <p>Gracias por registrarte para el Campamento de Jovenes 2024!</p>
+            <p>Haz click en el botton para submitir el formulario.</p>
+            <button type="submit" class="btn btn-submit" id="submit-btn">Submit</button>
         </div>
         
-        <div class="registration-tab" style="display: none;">
+        <div class="registration-tab" id="success-tab" style="display: none;">
             <p>Gracias por registrarte para el Campamento de Jovenes 2024!</p>
             <p>Haz click en el botton para regresar a la página principal.</p>
             <button type="button" class="btn btn-info" id="success-btn">Ir a la página principal</button>
@@ -385,8 +387,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
     submitBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        // Handle form submission
-        // Example: handleFormSubmission();
+        
+        var formValues = {
+            iglesia: document.getElementById('iglesia-local').value,
+            nombre: document.getElementById('nombre').value,
+            responsable: document.getElementById('edad-menor').value,
+            edad: document.getElementById('edad').value,
+            genero: document.querySelector('input[name="genero"]:checked').value,
+            celular: document.getElementById('telefono').value,
+            estadocivil: document.querySelector('input[name="estado-civil"]:checked').value,
+            creyente: document.querySelector('input[name="creyente"]:checked').value,
+            bautizado: document.querySelector('input[name="bautizado"]:checked').value,
+            medicina: document.querySelector('input[name="medicina"]:checked').value,
+            deportes: document.querySelector('input[name="deportes"]:checked').value,
+            alergias: docment.getElementById('alergia').value,
+            biblia: document.querySelector('input[name="biblia"]:checked').value,
+            libros: document.querySelector('input[name="libros"]:checked').value,
+            conocimiento: document.querySelector('input[name="conocimiento"]:checked').value,
+            entiendo: document.getElementById('entiendo').checked,
+            pago: document.querySelector('input[name="pago"]:checked').value
+
+        };
         showTab(tabs.length - 1);
     });
 
@@ -402,11 +423,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     nextBtn.addEventListener('click', () => {
-        if (currentTab < tabs.length - 1) {
-            currentTab++;
-            showTab(currentTab);
-        }
-    });
+    const currentTabElement = tabs[currentTab];
+    const cashPaymentRadio = currentTabElement.querySelector('#cash');
+
+    if (cashPaymentRadio && cashPaymentRadio.checked) {
+        currentTab = tabs.length - 2;
+        showTab(currentTab);
+    } else if (currentTab < tabs.length - 1) {
+        currentTab++;
+        showTab(currentTab);
+    }
+});
 
     paymentOptions.forEach(option => {
         option.addEventListener('click', () => {
