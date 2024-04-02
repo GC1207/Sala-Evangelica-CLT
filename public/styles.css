@@ -370,6 +370,12 @@ main h1 h2 {
     line-height: 5rem;
 }
 
+.contactanos ul a{
+    text-decoration: none;
+    color: black;
+}
+
+
 .contactanos ul li {
     list-style: none;
     font-size: 1.35rem;
